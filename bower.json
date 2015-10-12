@@ -1,0 +1,25 @@
+{
+  "name": "require-test",
+  "version": "0.0.0",
+  "authors": [
+    "Adam Carr <adam.carr@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.20",
+    "sammy": "~0.7.6",
+    "text": "~2.0.14"
+  }
+}
