@@ -11,7 +11,9 @@ function getConfig() {
 
 	config['jquery'] = '/bower_components/jquery/dist/jquery.min';
 	config['sammy'] = '/bower_components/sammy/lib/min/sammy-latest.min';
+	config['page'] = '/bower_components/page/page';
 	config['text'] = '/bower_components/text/text';
+	config['page-manager'] = './page-manager';
 	return config;
 }
 

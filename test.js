@@ -1,4 +1,4 @@
-define(['sammy', 'jquery'], function (Sammy, $) {
+define(['sammy', 'jquery', 'page-manager'], function (Sammy, $, pageManager) {
 	return {
 		bootstrap: function (modules) {
 			console.log('loaded');
@@ -6,8 +6,8 @@ define(['sammy', 'jquery'], function (Sammy, $) {
 			var router = Sammy('#container');
 			
 			router.route('#/', function (context) {
-				require(['text!./root.html'], function (template) {
-					context.$element().html(template);
+				require(['text!./root.html', 'text!./root.css'], function (template, style) {
+					pageManager.render(template, style);
 				});
 			});
 			
